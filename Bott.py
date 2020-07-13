@@ -18,33 +18,33 @@ async def normal_handler(event):
      sheet = wb.worksheets[0]
      row_count = sheet.max_row
      print('3')
-     for i in range(2, row_count+1):
+     #for i in range(2, row_count+1):
                
-          pers_left=sheet.cell(row=i, column= 1).value
+          #pers_left=sheet.cell(row=i, column= 1).value
                
-          pers_left=pers_left.replace(" ", "")         
-          pers_left=pers_left.replace("-", "")
-          pers_right=sheet.cell(row=i, column=2).value
-          pers_right=pers_right.replace(" ", "")
-          pers_right=pers_right.replace("-", "")    
-          obshee=(pers_left+pers_right).lower()
-          print('4')     
+          #pers_left=pers_left.replace(" ", "")         
+          #pers_left=pers_left.replace("-", "")
+          #pers_right=sheet.cell(row=i, column=2).value
+          #pers_right=pers_right.replace(" ", "")
+          #pers_right=pers_right.replace("-", "")    
+          #obshee=(pers_left+pers_right).lower()
+          #print('4')     
                
-          znach=pers_right=sheet.cell(row=i, column=3).value
-          znach=znach.lower()
+          #znach=pers_right=sheet.cell(row=i, column=3).value
+          #znach=znach.lower()
           
-          if message.find(obshee) != -1 :
-               if znach=='б':
-                    ss = (last+'\n ФАТ 2,5 БОЛЬШЕ')
-                    print(ss)
-                    break
-               if znach=='м':
-                    ss = (last+'\n ФАТ 2,5 МЕНЬШЕ')
-                    print(ss)  
-                    break
+          #if message.find(obshee) != -1 :
+               #if znach=='б':
+                    #ss = (last+'\n ФАТ 2,5 БОЛЬШЕ')
+                    #print(ss)
+                    #break
+               #if znach=='м':
+                    #ss = (last+'\n ФАТ 2,5 МЕНЬШЕ')
+                    #print(ss)  
+                    #break
                
      print('5')
-     await client.send_message('https://t.me/joinchat/OH-1jBvSUkFWPkj2H1ak-Q', ss)
+     await client.send_message('https://t.me/joinchat/OH-1jBvSUkFWPkj2H1ak-Q', last)
      print('6')
 client.start()
 
