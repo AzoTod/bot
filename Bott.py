@@ -44,7 +44,7 @@ async def normal_handler(event):
                     #break
                
      print('5')
-     await client.send_message('https://t.me/joinchat/OH-1jBvSUkFWPkj2H1ak-Q', last)
+     await client.send_message('https://t.me/joinchat/L9KUnBVGn7wxg4WO265gWw', last)
      print('6')
 client.start()
 
